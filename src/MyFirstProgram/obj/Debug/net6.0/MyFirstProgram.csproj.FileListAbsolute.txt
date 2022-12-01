@@ -1,0 +1,15 @@
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.csproj.AssemblyReference.cache
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.AssemblyInfoInputs.cache
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.AssemblyInfo.cs
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.csproj.CoreCompileInputs.cache
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\bin\Debug\net6.0\MyFirstProgram.exe
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\bin\Debug\net6.0\MyFirstProgram.deps.json
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\bin\Debug\net6.0\MyFirstProgram.runtimeconfig.json
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\bin\Debug\net6.0\MyFirstProgram.dll
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\bin\Debug\net6.0\MyFirstProgram.pdb
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.dll
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\refint\MyFirstProgram.dll
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.pdb
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\MyFirstProgram.genruntimeconfig.cache
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Debug\net6.0\ref\MyFirstProgram.dll
