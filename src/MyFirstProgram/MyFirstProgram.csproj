@@ -7,4 +7,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Widgets1">
+      <Aliases>W1</Aliases>
+    </Reference>
+    <Reference Include="Widgets2">
+      <Aliases>W2</Aliases>
+    </Reference>
+  </ItemGroup>
+
 </Project>

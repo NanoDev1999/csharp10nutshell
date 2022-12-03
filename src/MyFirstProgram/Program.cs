@@ -1,5 +1,9 @@
-﻿using System;
+﻿global using System;    // you can use global to effect all files in a project or compile unit
+// there are implicit globals such as System and some others, no need to name them global
+using System.Text;
 using Animals;
+
+
 
 
 
@@ -183,42 +187,42 @@ int bCheck = 1000000;
 
 
 int xMaxUnchecked = int.MaxValue;
-int yMaxUnchecked = unchecked (xMaxUnchecked + 1);
+int yMaxUnchecked = unchecked(xMaxUnchecked + 1);
 unchecked { int zMaxUnchecked = xMaxUnchecked + 1; }
 
 
 
 short xShortConversion = 1, yShortConversion = 1;
 // short zShortConversion = xShortConversion + yShortConversion; // Compile-time error because of implicit conversions to int
-short zShortConversion = (short) (xShortConversion + yShortConversion); // OK 
+short zShortConversion = (short)(xShortConversion + yShortConversion); // OK 
 
 
 // special values
-Console.WriteLine (double.NegativeInfinity); // -Infinity
-Console.WriteLine ( 1.0 / 0.0); // Infinity
-Console.WriteLine (-1.0 / 0.0); // -Infinity
-Console.WriteLine ( 1.0 / -0.0); // -Infinity
-Console.WriteLine (-1.0 / -0.0); // Infinity
-Console.WriteLine ( 0.0 / 0.0); // NaN
-Console.WriteLine ((1.0 / 0.0) - (1.0 / 0.0)); // NaN
-Console.WriteLine (0.0 / 0.0 == double.NaN); // False
-Console.WriteLine (double.IsNaN (0.0 / 0.0)); // True
-Console.WriteLine (object.Equals (0.0 / 0.0, double.NaN)); // True
+Console.WriteLine(double.NegativeInfinity); // -Infinity
+Console.WriteLine(1.0 / 0.0); // Infinity
+Console.WriteLine(-1.0 / 0.0); // -Infinity
+Console.WriteLine(1.0 / -0.0); // -Infinity
+Console.WriteLine(-1.0 / -0.0); // Infinity
+Console.WriteLine(0.0 / 0.0); // NaN
+Console.WriteLine((1.0 / 0.0) - (1.0 / 0.0)); // NaN
+Console.WriteLine(0.0 / 0.0 == double.NaN); // False
+Console.WriteLine(double.IsNaN(0.0 / 0.0)); // True
+Console.WriteLine(object.Equals(0.0 / 0.0, double.NaN)); // True
 
 
 // real number rounding errors
 float xFloat = 0.1f; // Not quite 0.1
-Console.WriteLine (xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat); // 1.0000001
+Console.WriteLine(xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat + xFloat); // 1.0000001
 
 // use decimals instead
 decimal mDecimalNoError = 1M / 6M; // 0.1666666666666666666666666667M
 double dDoublError = 1.0 / 6.0; // 0.16666666666666666
 
-decimal notQuiteWholeM = mDecimalNoError+mDecimalNoError+mDecimalNoError+mDecimalNoError+mDecimalNoError+mDecimalNoError; // 1.0000000000000000000000000002M
-double notQuiteWholeD = dDoublError+dDoublError+dDoublError+dDoublError+dDoublError+dDoublError; // 0.99999999999999989
+decimal notQuiteWholeM = mDecimalNoError + mDecimalNoError + mDecimalNoError + mDecimalNoError + mDecimalNoError + mDecimalNoError; // 1.0000000000000000000000000002M
+double notQuiteWholeD = dDoublError + dDoublError + dDoublError + dDoublError + dDoublError + dDoublError; // 0.99999999999999989
 
-Console.WriteLine (notQuiteWholeM == 1M); // False
-Console.WriteLine (notQuiteWholeD < 1.0); // True
+Console.WriteLine(notQuiteWholeM == 1M); // False
+Console.WriteLine(notQuiteWholeD < 1.0); // True
 
 
 BooleanTypeOperators booleanTypeOperators = new BooleanTypeOperators();
@@ -233,3 +237,319 @@ arrayExamples.Examples();
 VarParamExamples varParamExamples = new VarParamExamples();
 varParamExamples.Examples();
 
+
+
+
+ExpAndOperatorsExamples expAndOperatorsExamples = new ExpAndOperatorsExamples();
+expAndOperatorsExamples.Examples();
+
+
+
+string someWord = "rosebud";
+int someNumber = 42;
+bool rich = true, famous = false;
+
+
+
+const double cAgain = 2.99792458E08;
+// c += 10; // Compile-time Error
+
+
+
+// basic scoping
+int x4;
+{
+    int y5;
+    // int x4; // Error - x already defined
+}
+{
+    int y5; // OK - y not in scope
+}
+// Console.Write(y5); // Error - y is out of scope
+// Declare variables with declaration statements:
+string s88;
+int x88, y88;
+StringBuilder sb88;
+// Expression statements
+x = 1 + 2; // Assignment expression
+x++; // Increment expression
+int yTest = Math.Max(x, 5); // Assignment expression
+Console.WriteLine(yTest); // Method call expression
+sb88 = new StringBuilder(); // Assignment expression
+new StringBuilder(); // Object instantiation expression
+
+new StringBuilder(); // Legal, but useless
+new string('c', 3); // Legal, but useless
+x.Equals(y); // Legal, but useless
+
+
+if (5 < 2 * 3)
+{
+
+    Console.WriteLine("true"); // true
+}
+
+if (5 < 2 * 3)
+{
+    Console.WriteLine("true");
+    Console.WriteLine("Let’s move on!");
+}
+
+
+if (2 + 2 == 5)
+{
+    Console.WriteLine("Does not compute");
+}
+else
+{
+    Console.WriteLine("False"); // False
+}
+
+
+
+
+if (2 + 2 == 5)
+{
+    Console.WriteLine("Does not compute");
+}
+
+else
+{
+    if (2 + 2 == 4)
+    {
+        Console.WriteLine("Computes"); // Computes
+    }
+}
+
+
+
+
+
+if (true)
+{
+    if (false)
+    {
+        Console.WriteLine();
+    }
+    else
+    {
+        Console.WriteLine("executes");
+    }
+}
+
+
+
+
+
+if (true)
+{
+    if (false)
+        Console.WriteLine();
+}
+else
+    Console.WriteLine("does not execute");
+
+
+void TellMeWhatICanDo(int age)
+{
+    if (age >= 35)
+        Console.WriteLine("You can be president!");
+    else if (age >= 21)
+        Console.WriteLine("You can drink!");
+    else if (age >= 18)
+        Console.WriteLine("You can vote!");
+    else
+        Console.WriteLine("You can wait!");
+}
+
+
+
+void ShowCard(int cardNumber)
+{
+    switch (cardNumber)
+    {
+        case 13:
+            Console.WriteLine("King");
+            break;
+        case 12:
+            Console.WriteLine("Queen");
+            break;
+        case 11:
+            Console.WriteLine("Jack");
+            break;
+        case -1: // Joker is -1
+            goto case 12; // In this game joker counts as queen
+        default: // Executes for any other cardNumber
+            Console.WriteLine(cardNumber);
+            break;
+    }
+
+
+    switch (cardNumber)
+    {
+        case 13:
+        case 12:
+        case 11:
+            Console.WriteLine("Face card");
+            break;
+        default:
+            Console.WriteLine("Plain card");
+            break;
+    }
+
+    // interesting way to type a switch
+    string cardName = cardNumber switch
+    {
+        13 => "King",
+        12 => "Queen",
+        11 => "Jack",
+        _ => "Pip card" // equivalent to 'default'
+    };
+
+
+
+    int cardNumberd = 12;
+    string suite = "spades";
+
+    // multi value switch
+    string cardNumberdz = (cardNumberd, suite) switch
+    {
+        (13, "spades") => "King of spades",
+        (13, "clubs") => "King of clubs",
+
+    };
+}
+
+
+TellMeTheType(12);
+TellMeTheType("hello");
+TellMeTheType(true);
+
+void TellMeTheType(object x) // object allows any type.
+{
+    switch (x)
+    {
+        case int i5:
+            Console.WriteLine("It's an int!");
+            Console.WriteLine($"The square of {i5} is {i5 * i5}");
+            break;
+        case string s:
+            Console.WriteLine("It's a string");
+            Console.WriteLine($"The length of {s} is {s.Length}");
+            break;
+        case DateTime _:
+            Console.WriteLine("It's a DateTime");
+            break;
+        case null:
+            Console.WriteLine("Nothing here");
+            break;
+        default:
+            Console.WriteLine("I don't know what x is");
+            break;
+    }
+
+
+    switch (x)
+    {
+        case float f when f > 1000:
+        case double d when d > 1000:
+        case decimal m when m > 1000:
+            Console.WriteLine("We can refer to x here but not f or d or m");
+            break;
+    }
+
+    int i = 0;
+    while (i < 3)
+    {
+        Console.Write(i);
+        i++;
+    }
+
+    int i2 = 0;
+    do
+    {
+        Console.WriteLine(i2);
+        i2++;
+    }
+    while (i2 < 3);
+
+
+
+}
+
+
+for (int i44 = 0; i44 < 3; i44++)
+{
+    Console.WriteLine(i44);
+}
+
+for (int i55 = 0, prevFib = 1, curFib = 1; i55 < 10; i55++)
+{
+    Console.WriteLine(prevFib);
+    int newFib = prevFib + curFib;
+    prevFib = curFib; curFib = newFib;
+}
+
+// infinite loop
+// for (;;){
+// Console.WriteLine ("interrupt me");
+// }
+
+
+foreach (char c3 in "beer")
+{// c is the iteration variable
+    Console.WriteLine(c3);
+}
+
+
+
+
+int x987 = 0;
+while (true)
+{
+    if (x987++ > 5)
+    {
+        break; // break from the loop
+    }
+}
+// execution continues here after break
+
+
+
+
+for (int i53 = 0; i53 < 10; i53++)
+{
+    if ((i53 % 2) == 0)
+    {// If i is even,
+        continue; // continue with next iteration
+    }
+    Console.Write(i53 + " ");
+}
+
+
+
+int i555 = 1;
+startLoop:
+if (i555 <= 5)
+{
+    Console.Write(i555 + " ");
+    i555++;
+    goto startLoop;
+}
+
+
+decimal AsPercentage(decimal d)
+{
+    decimal p = d * 100m;
+    return p; // Return to the calling method with value
+}
+
+
+int w = 0;
+if (w == null){
+    throw new ArgumentNullException ();
+}
+
+
+NamespaceExamples namespaceExamples = new NamespaceExamples();
+namespaceExamples.Examples();
