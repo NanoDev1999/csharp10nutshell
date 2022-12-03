@@ -1,0 +1,72 @@
+
+
+Create folder structure as following for .NET:
+
+
+MainProjectFolder
+	projectName.sln
+	artifacts - build outputs
+	build - build customization scripts
+	docs - documentation
+		Notes.txt
+	hidden - folder that is hidden and all files, in the .gitignore
+	packages - NuGet packages
+	samples - shows how to use the code or library
+	src - contains source code
+	tests - unit tests
+	.editorconfig
+	.gitignore
+	.gitattributes
+	LICENSE
+	README.md
+
+set up your git repo
+
+dotnet new nugetconfig
+// creates your nugetconfig file from dotnet, should just be default
+
+
+You can create a new template using the wizard back in Visual Studio, but using Visual Studio code we need to use the CLI.
+
+The format can follow this 
+
+
+
+There are many templates from here:
+https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new
+
+Template in depth:
+https://github.com/dotnet/templating
+Common project and item templates	dotnet/sdk
+ASP.NET and Blazor templates	dotnet/aspnetcore
+ASP.NET Single Page Application templates	dotnet/spa-templates
+WPF templates	dotnet/wpf
+Windows Forms templates	dotnet/winforms
+Test templates	dotnet/test-templates
+MAUI templates	dotnet/maui
+
+
+We are doing a basic console app for this tutorial.
+
+
+
+
+cd into src
+cd src
+
+dotnet new Console -n NameOfProgram
+
+dotnet new Console -n MyFirstProgram
+
+
+
+
+
+
+
+As a program can have only one entry point, there can be at most one file with
+top-level statements in a C# project.
+
+
+
+

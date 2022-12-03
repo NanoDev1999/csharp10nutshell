@@ -7,8 +7,8 @@ public class ReferenceTypeExamples
     public class PointSmaller { public int X, Y; }
 
 
-    public void Examples()
-    {
+    public void Examples() {
+
         Console.WriteLine("ReferenceTypeExamples Examples Called");
 
         Point p1 = new Point();
@@ -22,7 +22,7 @@ public class ReferenceTypeExamples
 
 
         Point p = null;
-        Console.WriteLine (p == null); // True
+        Console.WriteLine(p == null); // True
         // The following line generates a runtime error
 
         // (a NullReferenceException is thrown):

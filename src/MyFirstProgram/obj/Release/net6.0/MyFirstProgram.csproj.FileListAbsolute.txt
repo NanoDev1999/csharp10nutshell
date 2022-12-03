@@ -1,0 +1,5 @@
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Release\net6.0\MyFirstProgram.csproj.AssemblyReference.cache
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Release\net6.0\MyFirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Release\net6.0\MyFirstProgram.AssemblyInfoInputs.cache
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Release\net6.0\MyFirstProgram.AssemblyInfo.cs
+E:\Nano\New Peak\Projects\- Tech Stack\CSharp 10 in a Nutshell\src\MyFirstProgram\obj\Release\net6.0\MyFirstProgram.csproj.CoreCompileInputs.cache
